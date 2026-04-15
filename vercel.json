@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/whitepaper", "dest": "/whitepaper.html" },
+    { "src": "/whitepaper.html", "dest": "/whitepaper.html" }
+  ]
+}
