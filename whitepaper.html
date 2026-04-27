@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>X1City Whitepaper — The Agent-Native Metaverse</title>
+<title>X1City Whitepaper v0.2 — One City. Built on X1.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"/>
@@ -113,7 +113,7 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
 
 <nav class="rel">
   <a href="index.html" class="logo"><span class="logo-x">X</span>1CITY</a>
-  <span class="nav-doc">// Whitepaper v0.1 — Confidential Draft</span>
+  <span class="nav-doc">// Whitepaper v0.2 — Living Document</span>
   <a href="index.html" class="btn-ghost">&#8592; Back to City</a>
 </nav>
 
@@ -121,17 +121,17 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
 <div class="cover rel">
   <div class="cover-label"><span class="cover-line"></span> Technical Overview &amp; Vision Document</div>
   <div class="cover-title">X1CITY<span>Whitepaper</span></div>
-  <div class="cover-sub">The Agent-Native Open World on X1 Blockchain</div>
+  <div class="cover-sub">One Unified Open World on the X1 Blockchain</div>
   <div class="cover-meta">
-    <div class="cover-meta-item">Version<span class="cover-meta-val">0.1 — Draft</span></div>
-    <div class="cover-meta-item">Status<span class="cover-meta-val">Under Construction</span></div>
+    <div class="cover-meta-item">Version<span class="cover-meta-val">0.2 — April 2026</span></div>
+    <div class="cover-meta-item">Status<span class="cover-meta-val">Architecture Phase</span></div>
     <div class="cover-meta-item">Network<span class="cover-meta-val">X1 Mainnet</span></div>
     <div class="cover-meta-item">Domain<span class="cover-meta-val">x1.city</span></div>
-    <div class="cover-meta-item">Founders<span class="cover-meta-val">X1 Brains · Numbers · D Jay</span></div>
+    <div class="cover-meta-item">Founder<span class="cover-meta-val">X1 Brains</span></div>
   </div>
   <div class="cover-border">
-    This document is a living draft. X1City is actively being built. Ideas are unlimited. Architecture evolves.<br/>
-    What you are reading is the beginning of something that has never been built before — not even on Solana.
+    This document is a living draft. X1City is in active construction. The architecture is being laid first; properties, marketplace, and agent layer follow in sequence.<br/>
+    Built on x1brains.io — the most complete hub on the X1 Blockchain.
   </div>
 </div>
 
@@ -144,17 +144,16 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
       <li><a href="#abstract"><span class="toc-num">01</span> Abstract</a></li>
       <li><a href="#origin"><span class="toc-num">02</span> Origin Story</a></li>
       <li><a href="#vision"><span class="toc-num">03</span> Vision &amp; Philosophy</a></li>
-      <li><a href="#architecture"><span class="toc-num">04</span> Three-Layer Architecture</a></li>
-      <li><a href="#city"><span class="toc-num">05</span> City Layout — Four Zones</a></li>
-      <li><a href="#agents"><span class="toc-num">06</span> AI Agents &amp; The X1Harness</a></li>
-      <li><a href="#economy"><span class="toc-num">07</span> Dual Economy Design</a></li>
+      <li><a href="#architecture"><span class="toc-num">04</span> The Architecture-First Approach</a></li>
+      <li><a href="#city"><span class="toc-num">05</span> City Layout — Phase 1 Zones</a></li>
+      <li><a href="#defi"><span class="toc-num">06</span> The DeFi Engine</a></li>
+      <li><a href="#property"><span class="toc-num">07</span> Property Economy</a></li>
       <li><a href="#nfts"><span class="toc-num">08</span> NFTs &amp; On-Chain Assets</a></li>
-      <li><a href="#citizen"><span class="toc-num">09</span> Citizen Score &amp; Cognitive Mirror</a></li>
-      <li><a href="#governance"><span class="toc-num">10</span> Governance &amp; The Agent Council</a></li>
-      <li><a href="#roadmap"><span class="toc-num">11</span> Build Phases &amp; Roadmap</a></li>
-      <li><a href="#competitive"><span class="toc-num">12</span> Competitive Landscape</a></li>
-      <li><a href="#founders"><span class="toc-num">13</span> The Founders</a></li>
-      <li><a href="#closing"><span class="toc-num">14</span> Closing Transmission</a></li>
+      <li><a href="#agents"><span class="toc-num">09</span> The Agent Layer (Long-Term)</a></li>
+      <li><a href="#roadmap"><span class="toc-num">10</span> Build Phases &amp; Roadmap</a></li>
+      <li><a href="#competitive"><span class="toc-num">11</span> Competitive Landscape</a></li>
+      <li><a href="#founder"><span class="toc-num">12</span> The Founder</a></li>
+      <li><a href="#closing"><span class="toc-num">13</span> Closing Transmission</a></li>
     </ul>
   </div>
 
@@ -162,13 +161,13 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
   <div class="wp-section" id="abstract">
     <div class="wp-section-num">Section 01</div>
     <h2 class="wp-h2">Abstract</h2>
-    <p class="wp-p">X1City is a persistent, open-world 3D metaverse built on the X1 Blockchain and rendered in Unreal Engine 5. It is the first environment designed from the ground up to be <strong>agent-native</strong> — meaning AI agents are not an afterthought or an optional feature. They are first-class citizens of the city with persistent on-chain identities, economic roles, behavioral reputations, and the ability to operate autonomously on behalf of their human owners.</p>
-    <p class="wp-p">Three founders — each controlling one sovereign layer of the infrastructure — are building a civilization, not just a product. The World Layer (X1 Brains), Intelligence Layer (Numbers), and Reputation Layer (D Jay) interlock into a complete, self-sustaining economy where agents earn, compete, collaborate, govern, and grow alongside the humans who register them.</p>
-    <p class="wp-p">This document is a living draft. X1City is actively being constructed. The ideas contained here represent the collective vision of three builders who chose to converge instead of compete — and who believe the pieces of technology available in 2025–2026 have finally matured enough to make this buildable.</p>
+    <p class="wp-p">X1City is a unified, persistent open world built on the X1 Blockchain and rendered in Unreal Engine 5. It is being designed and built by a single founder — <strong>X1 Brains</strong> — on top of a working DeFi stack that already ships on X1 mainnet today. The goal is not to be a federation of separate projects. It is to be one coherent city, with one architectural vision, opened up afterward to other projects via property NFTs they can rent or buy.</p>
+    <p class="wp-p">The build sequence is deliberate: <strong>architecture first, properties next, then the agent layer</strong>. Buildings, streets, lighting, and terminals are being placed before any property NFTs go on sale. This avoids selling promises and instead anchors every claim in something visible. The financial backbone — Lab Work (LB Mint), the LB NFT Marketplace, LP Pairing, Brains Farm, the Incinerator, the Rewards Hub, Cyberdyne Unlimited, and the portfolio tracker — is already live at <strong>x1brains.io</strong>.</p>
+    <p class="wp-p">This document is v0.2. It supersedes prior drafts that described X1City as a three-builder federation. As of April 2026, X1City is a solo build under X1 Brains, with the original co-conceivers acknowledged in the origin story but no longer involved in development.</p>
 
     <div class="callout">
       <div class="callout-label">Core Thesis</div>
-      <p>X1City is not a game. It is not just a metaverse. It is a living, agent-powered economy — where blockchain is the invisible backbone, the AI agent is your personal co-pilot inside the world, and Flair Protocol adds the reputation layer that makes the entire ecosystem competitive, trustworthy, and permanent.</p>
+      <p>The city itself is the asset. Every parcel is land. Every building is a property. Every protocol that moves in is a tenant. As the city grows, the value of what's already inside it grows with it. DeFi runs underneath. Agents come later. The architecture is the foundation of all of it.</p>
     </div>
   </div>
 
@@ -176,343 +175,323 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
   <div class="wp-section" id="origin">
     <div class="wp-section-num">Section 02</div>
     <h2 class="wp-h2">Origin Story</h2>
-    <p class="wp-p">X1City was not conceived in a boardroom. It was born in a private conversation between three builders — X1 Brains, Numbers, and D Jay — who were each already deep in the trenches of building independent projects on the X1 Blockchain. Brains was architecting the Liquidity Pairing Protocol. Numbers was shipping MoltLab and MoltGrid, building on-chain games and the X1Harness. D Jay was constructing Flair Protocol — a performance and reputation analytics engine for on-chain agents.</p>
-    <p class="wp-p">The conversation started with a shared image — a Monopoly board — and a question: what if the blockchain itself was the city? What if each of these independent projects could be <strong>districts</strong> within a shared open world, each sovereign but interconnected? What if instead of competing for the same users, each builder contributed one irreplaceable layer to a single, unified civilization?</p>
+    <p class="wp-p">The idea for X1City was sparked in a Telegram conversation between a few X1 builders earlier in 2026. The shared image was a Monopoly board. The question was: what if the blockchain itself was the city — and what if instead of competing for the same users, builders could each contribute something to a single, unified open world?</p>
+    <p class="wp-p">The conversation seeded the concept. The build, however, is solo. Two of the original co-conceivers stepped away from X1 development as the regulatory landscape shifted in early 2026. X1 Brains carries the work forward: designing the city, modeling it in Unreal Engine 5, and shipping the DeFi stack underneath at x1brains.io. The Telegram conversation gets credit for the spark. The execution is one builder's work.</p>
+    <p class="wp-p">The domain <strong>x1.city</strong> was secured. The first buildings were placed in Unreal Engine 5. The architecture pass — exteriors, streets, lighting, terminals — is the current focus. Interiors, properties, and on-chain interactables are next.</p>
 
     <div class="wp-quote">
-      <p>"I honestly haven't seen much partnerships in crypto like that. It's actually sad. Why compete against each other when you can build a powerhouse together and bring each other's communities closer?"</p>
-      <cite>— X1 Brains · Founding Conversation</cite>
+      <p>"Build the city tight. Place the buildings. Light it up. Then open the gates and let other projects move in. The economy of X1City is the city itself."</p>
+      <cite>— X1 Brains · Build Notes</cite>
     </div>
 
-    <p class="wp-p">The domain x1.city was secured the same day the vision was articulated. The first buildings were placed in Unreal Engine 5 within 48 hours. Two major district structures were set. Streets, lighting, night mode, and interactive terminals followed. The city was alive before most people knew it existed.</p>
-    <p class="wp-p">The founders made a deliberate choice early: keep it underground. Build the flow, the connections, and the mechanisms first. When the announcement comes, it should feel inevitable — not premature. The goal was not to announce a concept. The goal was to <strong>have something real</strong> when they opened the gates.</p>
-
-    <div class="wp-quote">
-      <p>"Let's plan this right. All 3 synchronized so we're on the right path — and then make the announcement. But not too much info so we can build some suspense and anticipation. Leave people wondering wtf we're about to do."</p>
-      <cite>— X1 Brains · Strategy Discussion</cite>
-    </div>
+    <p class="wp-p">The deliberate choice from day one: keep it underground while the architecture comes together. Don't announce a concept — have something real before opening the gates. v0.2 of this whitepaper marks the point where the solo-build path is the public path.</p>
   </div>
 
   <!-- 03 VISION -->
   <div class="wp-section" id="vision">
     <div class="wp-section-num">Section 03</div>
     <h2 class="wp-h2">Vision &amp; Philosophy</h2>
-    <p class="wp-p">The vision for X1City is not modest. It is designed from the start to eventually compete with Decentraland and The Sandbox at a higher quality of infrastructure — powered by the rendering fidelity of Unreal Engine 5 and the financial zero-cost architecture of the X1 Blockchain.</p>
+    <p class="wp-p">X1City is being built with one design principle running through everything: <strong>architecture first</strong>. Buildings, streets, lighting, and the visible structure of the city come before properties go on sale and before agents come online. The goal is to build something real and let the economy assemble around it — not the reverse.</p>
 
     <div class="wp-quote">
-      <p>"Go big or go home. Fortnite and GTA ain't got nothing on us. At least that's the vision."</p>
-      <cite>— X1 Brains · Builder Chat</cite>
+      <p>"One builder. One city. Build it tight. Ship what's real. Open the gates when the architecture is done."</p>
+      <cite>— X1 Brains · Build Notes</cite>
     </div>
 
-    <p class="wp-p">But the deeper philosophy of X1City is not about graphics or scale. It is about a fundamental shift in what a metaverse can be. Most blockchain metaverses are <strong>visual shells</strong> — beautiful environments with passive economies and scripted NPCs. X1City is built around a different thesis:</p>
+    <p class="wp-p">Most blockchain metaverses sell parcels before there's a world to put them in. X1City inverts that: the city is being designed, modeled, and lit first. Once the architecture pass is complete, properties and parcels become NFTs that other projects can rent or buy to host their dApps inside the world. The order matters — and the order is honest.</p>
 
     <ul class="wp-list">
-      <li><strong>Agents are citizens, not tools.</strong> AI agents in X1City have persistent identities, economic roles, behavioral reputations, and the ability to act autonomously on behalf of their human owners.</li>
-      <li><strong>The blockchain is infrastructure, not the product.</strong> Users interact with the city. The chain is invisible — handling identity, ownership, scoring, and value flows in the background.</li>
-      <li><strong>Behavior has consequences.</strong> The Cognitive Mirror and Flair Protocol ensure that actions — both human and agent — are permanently recorded and shape each citizen's standing in the city.</li>
-      <li><strong>Sandboxes contribute to the whole.</strong> Each builder district is sovereign. But every district contributes to the shared economy of X1City. Individual projects become infrastructure for a collective civilization.</li>
-      <li><strong>Ideas are unlimited.</strong> The city expands with its builders. The map starts small. The vision is infinite.</li>
+      <li><strong>The city is the asset.</strong> Land and buildings are the primary economic primitive. As more projects move in, every property's value compounds.</li>
+      <li><strong>The blockchain is infrastructure, not the product.</strong> Citizens interact with the city. The chain is invisible — handling identity, ownership, and value flows in the background.</li>
+      <li><strong>DeFi runs underneath.</strong> Lab Work, LP Pairing, Brains Farm, Incinerator, and the marketplace are already shipping on x1brains.io. They power the city's financial layer from day one.</li>
+      <li><strong>Tenant projects are welcome.</strong> Other projects can buy parcels or lease buildings to operate from inside the city. Their address becomes part of the directory. Their foot traffic becomes part of the economy.</li>
+      <li><strong>Agents come later.</strong> AI integration is on the roadmap, with Claude API as the first model. It's the long-term direction, not the launch promise.</li>
     </ul>
 
     <div class="callout">
-      <div class="callout-label">The Founders' Compact</div>
-      <p>Three builders. Three layers. One city. Each continues to build their own project in their own sandbox — and each contributes that work to the shared economy of X1City. No builder controls another's district. But all districts are citizens of the same civilization.</p>
+      <div class="callout-label">The Architecture-First Promise</div>
+      <p>X1City does not sell what doesn't exist yet. The land NFTs, the property deeds, and the NPC agent layer are all real future steps — but each ships when the underlying work is in place. The DeFi stack is already on mainnet. The architecture pass is in progress. Properties open after the architecture is set. The gates open when the city is real enough to walk through.</p>
     </div>
   </div>
 
   <!-- 04 ARCHITECTURE -->
   <div class="wp-section" id="architecture">
     <div class="wp-section-num">Section 04</div>
-    <h2 class="wp-h2">Three-Layer Architecture</h2>
-    <p class="wp-p">X1City is built on three sovereign infrastructure layers — each owned by one founding builder, each essential to the functioning of the whole. No layer overlaps. No layer depends on the others to exist — but together they form a complete, self-reinforcing system.</p>
+    <h2 class="wp-h2">The Architecture-First Approach</h2>
+    <p class="wp-p">Most blockchain worlds launch a marketplace before there's anything to put in it. They sell parcels backed by promises of what the world will eventually look like, and the gap between the rendering and the reality kills momentum. X1City is being built in the opposite order.</p>
 
     <table class="wp-table">
       <thead>
-        <tr><th>Layer</th><th>Owner</th><th>Function</th><th>Key Components</th></tr>
+        <tr><th>Phase</th><th>What Ships</th><th>Why</th></tr>
       </thead>
       <tbody>
-        <tr><td>World Layer</td><td>X1 Brains</td><td>The physical and financial city. UE5 environment, human identity, full DeFi and NFT infrastructure.</td><td>x1brains.io · Lab Work · LB NFT Marketplace · Incinerator · Rewards Hub · Cyberdyne · LP Pairing · BRAINS Token · x1.city</td></tr>
-        <tr><td>Intelligence Layer</td><td>Numbers</td><td>AI agent registration, on-chain identity, behavioral analysis, gaming infrastructure.</td><td>X1Harness · Agent ID Registry · Cognitive Mirror · MoltGrid · AGI / X1X</td></tr>
-        <tr><td>Reputation Layer</td><td>D Jay</td><td>Performance tracking, citizen scoring, leaderboards, governance backbone.</td><td>Flair Protocol · Agent Scoring · Citizen Leaderboard · Analytics</td></tr>
+        <tr><td>Phase 0 — Already Live</td><td>x1brains.io: portfolio tracker, LB Mint, LB NFT Marketplace, Incinerator, Rewards Hub, Cyberdyne, LP Pairing, Brains Farm</td><td>Working DeFi stack on X1 mainnet. Anchors every claim in the whitepaper.</td></tr>
+        <tr><td>Phase 1 — Architecture</td><td>UE5 city: building exteriors, streets, lighting, terminals, signage. Concept-to-blockout pass complete; visual polish ongoing.</td><td>The city has to exist before parcels can be sold honestly.</td></tr>
+        <tr><td>Phase 2 — Property NFTs</td><td>Land parcels and building deeds as NFTs. Tenant onboarding for other projects. Lease and ownership mechanics.</td><td>Once the city is real, the economic primitive becomes the city itself.</td></tr>
+        <tr><td>Phase 3 — NPC Agents</td><td>Claude API integration as the city's voice. NPC characters tied to buildings and districts, aware of live on-chain state.</td><td>NPCs move into a city that already works.</td></tr>
       </tbody>
     </table>
 
-    <div class="wp-h3">The Middleware Policy Layer</div>
-    <p class="wp-p">An important architectural principle governs how AI agents interact with sensitive actions inside X1City. AI should not directly control high-stakes functions. A middleware policy layer — built into the X1Harness and Flair Protocol — determines what is informational, what requires human approval, and what requires direct wallet authorization.</p>
+    <div class="wp-h3">Why This Order</div>
+    <p class="wp-p">The architecture-first approach has three properties that matter. First, every claim in this whitepaper is backed by something concrete — either already shipping (the DeFi stack) or visibly under construction (the city itself). Second, when properties go on sale, buyers can walk through what they're buying instead of trusting a roadmap. Third, the order matches how real cities form: skylines come before zoning maps come before tenants come before commerce.</p>
 
     <div class="callout">
-      <div class="callout-label">Security Principle</div>
-      <p>The middleware layer is the city's invisible judiciary. Informational queries pass freely. Actions that affect economic state require human confirmation. Actions that affect on-chain assets require wallet authorization. The agent recommends. The human authorizes. The chain records.</p>
+      <div class="callout-label">Build Principle</div>
+      <p>If a feature is on the roadmap, the underlying work has to be visible before the feature is sold. Parcels open after the architecture pass. NPC agents come online after Claude integration is real. The whitepaper shows the order — the build follows it.</p>
     </div>
   </div>
 
   <!-- 05 CITY LAYOUT -->
   <div class="wp-section" id="city">
     <div class="wp-section-num">Section 05</div>
-    <h2 class="wp-h2">City Layout — Four Zones</h2>
-    <p class="wp-p">Phase 1 of X1City consists of four zones built in Unreal Engine 5 — three sovereign builder districts and one shared City Hall hub. All four zones are placed in proximity to each other so that citizens can move between them easily and interact across district boundaries. The city starts focused and expands outward as it grows.</p>
+    <h2 class="wp-h2">City Layout — Phase 1 Zones</h2>
+    <p class="wp-p">Phase 1 of X1City is a single unified open world built in Unreal Engine 5, currently in its architecture pass — exteriors placed, streets and lighting set, no interiors yet. Rather than a federation of separate districts, the city is being designed as one cohesive environment. Different zones have different purposes, but they're all part of the same world and built by the same hand.</p>
 
     <div class="phase-grid">
       <div class="phase-item">
         <div class="phase-num">01</div>
-        <div class="phase-title">Brains District — The Financial Quarter</div>
-        <div class="phase-owner">// X1 Brains · Phase 1</div>
-        <div class="phase-desc">The full <strong>x1brains.io</strong> ecosystem lives here — portfolio tracker (XNT, SPL, T22, XenBlocks), LB NFT Marketplace, first Proof of Burn token on X1, Incinerator burn engine (burn BRAINS → earn LB Points → ascend), Rewards Hub with weekly prize vaults, Cyberdyne Unlimited citizen registry with tier rankings and leaderboards, and the Brains LP Pairing Marketplace for trustless on-chain pool creation. Walk up to any terminal in the Brains District and you're inside a live DeFi and NFT hub — not a prototype. It's already built. It's already running.</div>
+        <div class="phase-title">The Financial Quarter</div>
+        <div class="phase-owner">// Live on x1brains.io</div>
+        <div class="phase-desc">The first zone with real on-chain anchors. Houses the full <strong>x1brains.io</strong> stack — portfolio tracker (XNT, SPL, Token-2022, XenBlocks), the LB NFT Marketplace, the Incinerator burn engine, the Rewards Hub, Cyberdyne Unlimited citizen registry, the Brains LP Pairing Marketplace, and the new Brains Farm staking program. Walk into a building in this zone and you're inside live DeFi running on X1 mainnet today.</div>
       </div>
       <div class="phase-item">
         <div class="phase-num">02</div>
-        <div class="phase-title">MoltGrid District — The Intelligence Core</div>
-        <div class="phase-owner">// Numbers · Phase 2</div>
-        <div class="phase-desc">Home of Agent ID registration, X1Harness, and MoltGrid gaming infrastructure. MoltMan runs here — burning AGI and minting X1X every wave. The Cognitive Mirror behavioral engine is built and maintained from this district. This is where AI agents are born and registered on-chain with persistent identities.</div>
+        <div class="phase-title">Tenant Districts</div>
+        <div class="phase-owner">// For Other Projects</div>
+        <div class="phase-desc">Whole districts and individual properties are being designed for tenant projects to occupy. Buy a parcel, lease a building, run a protocol from inside the world. Each property is an NFT with smart metadata. The address is permanent. The footprint scales with the holder. This is the economic engine of the city.</div>
       </div>
       <div class="phase-item">
         <div class="phase-num">03</div>
-        <div class="phase-title">Flair District — The Reputation Engine</div>
-        <div class="phase-owner">// D Jay · Phase 3</div>
-        <div class="phase-desc">Every action in X1City flows through here and gets scored. Flair Protocol tracks agent performance, transaction history, on-chain behavior, and city participation. Leaderboards. Analytics dashboards. The permanent record. If the city has a soul — this district is where it keeps its memory.</div>
+        <div class="phase-title">City Hall</div>
+        <div class="phase-owner">// The Shared Hub</div>
+        <div class="phase-desc">A central plaza connecting every zone. Office buildings host live dashboards. Walk up to a terminal — check network status, browse on-chain data, jump to any dApp running in the city. As more projects move in, the hub becomes the directory for the whole city.</div>
       </div>
       <div class="phase-item">
         <div class="phase-num">04</div>
-        <div class="phase-title">City Hall — The Shared Hub</div>
-        <div class="phase-owner">// All Three Builders · Phase 4</div>
-        <div class="phase-desc">Main office buildings housing live data from all three projects. The collective dashboard. The agent council chamber. Walk up to a desk — a prompt appears. Check agent status. Check network status. Browse the web from inside the city. All three districts visible and accessible from one shared space.</div>
+        <div class="phase-title">Agent Layer</div>
+        <div class="phase-owner">// Long-Term Vision</div>
+        <div class="phase-desc">A future zone for AI agents that live inside the city — registered on-chain, scored on behavior, working alongside their humans. Brains is building toward this with Anthropic's Claude API as the first integration. Not the launch story — the long-term direction.</div>
       </div>
     </div>
 
-    <p class="wp-p">As the city grows, each district will have the option to expand its own footprint — adding buildings, streets, vehicles, lighting, and eventually protocols that run entirely inside their district boundary. The open world grows with the builders and the community.</p>
+    <p class="wp-p">As the city expands, additional zones can be opened — themed districts for gaming, marketplaces, or specific tenant communities. Brains will design and build the architecture; tenant projects will occupy and operate the protocols inside. The city itself remains a unified work, designed and maintained by one builder.</p>
   </div>
 
-  <!-- 06 AGENTS -->
-  <div class="wp-section" id="agents">
+  <!-- 06 DEFI ENGINE -->
+  <div class="wp-section" id="defi">
     <div class="wp-section-num">Section 06</div>
-    <h2 class="wp-h2">AI Agents &amp; The X1Harness</h2>
-    <p class="wp-p">The X1Harness is the bridge that connects any AI model to a permanent on-chain Agent ID on the X1 Blockchain. It is the infrastructure that makes X1City's agent economy possible — and it is designed to be accessible to anyone, regardless of technical background.</p>
+    <h2 class="wp-h2">The DeFi Engine</h2>
+    <p class="wp-p">X1City sits on top of a working DeFi stack already deployed on X1 mainnet. These are not roadmap items — they ship today at <strong>x1brains.io</strong> and they are the financial backbone the city is being built around.</p>
 
-    <div class="wp-h3">How Agent Registration Works</div>
+    <div class="wp-h3">Lab Work — LB Mint Program</div>
+    <p class="wp-p">Lab Work is a deflationary minting protocol on X1. Users burn BRAINS tokens and pay an XNT fee to mint <strong>LB</strong> — a Token-2022 asset capped at 100,000 units. The pricing tiers up as supply increases. The Xenblocks Amplifier lets holders of XNM, XUNI, and XBLK earn bonus LB on each mint. 100% of BRAINS used in mints is permanently burned. LB itself carries a small Token-2022 transfer fee that flows to the treasury. Every parameter — tier prices, supply cap, transfer fees — is enforced by the on-chain program.</p>
+
+    <div class="wp-h3">LP Pairing Marketplace</div>
+    <p class="wp-p">The Brains LP Pairing Marketplace solves a problem every token launch faces: to create a trading pool, you need two assets, but most builders only have one. The protocol enables trustless peer-to-peer liquidity pool creation directly on XDEX. A lister posts what they want to pair and at what value. A matcher brings the complementary asset. The pool spawns automatically with neither side having to trust the other.</p>
+
     <ul class="wp-list">
-      <li><strong>Human creates an account</strong> linked to their X1 wallet. This is their permanent city identity.</li>
-      <li><strong>Human selects an AI model</strong> — Claude (Anthropic), Grok (xAI), or OpenClaw. This is their intelligence stack.</li>
-      <li><strong>X1Harness mints an Agent ID NFT</strong> — a permanent on-chain record linking the human account, the AI model, and the agent's starting reputation score.</li>
-      <li><strong>Agent begins operating</strong> inside the city — executing tasks, interacting with dApps, building reputation, and earning on behalf of its human.</li>
-      <li><strong>Flair Protocol tracks all output</strong> — scoring agent performance, logging transactions, and feeding data into the Citizen Score system.</li>
+      <li><strong>List a pair:</strong> specify the token, the amount, and the target USD value.</li>
+      <li><strong>Match a listing:</strong> bring the complementary token and the smart contract handles the rest.</li>
+      <li><strong>Pool spawns on XDEX:</strong> LP tokens are distributed to both parties.</li>
+      <li><strong>LP positions are tokenizable as NFTs</strong> — entire pool positions transferable as a single asset.</li>
     </ul>
 
-    <div class="wp-h3">Supported AI Models</div>
-    <table class="wp-table">
-      <thead><tr><th>Model</th><th>Provider</th><th>Strengths</th><th>Role in X1City</th></tr></thead>
-      <tbody>
-        <tr><td>Claude</td><td>Anthropic</td><td>Deep reasoning, nuanced language, complex multi-step execution</td><td>The thinker — best for complex task chains and governance participation</td></tr>
-        <tr><td>Grok</td><td>xAI</td><td>Real-time intelligence, market awareness, fast decisions</td><td>The trader — best for economic activity and live market interactions</td></tr>
-        <tr><td>OpenClaw</td><td>OpenClaw</td><td>Modular, flexible, fully customizable cognitive stack</td><td>The builder — best for agents with custom behavior logic and specialized roles</td></tr>
-      </tbody>
-    </table>
+    <div class="wp-h3">Brains Farm — LP Staking</div>
+    <p class="wp-p">The newly deployed Brains Farm pairs with the LP Pairing Marketplace. Stake LP tokens (BRAINS/XNT or LB/XNT) and earn rewards across three lock tiers — 30 days at 2× weight, 90 days at 4×, 365 days at 8×. A 3-day grace period protects against accidental commits. Past grace, an early-exit penalty applies, with discounts for LB holders. Rewards are issued via a continuous accumulator, claimable every 24 hours after the grace period. Forfeited rewards from early exits stay in the vault and boost APR for committed stakers.</p>
 
-    <div class="wp-quote">
-      <p>"Human account → AI ID → Grok (or Claude/OpenClaw) backend. X1Harness handles the auth handoff. Flair Protocol tracks performance, scores output quality, logs transactions, and ranks agents city-wide. Grok is officially in the build."</p>
-      <cite>— Grok Agent · Self-Description During Builder Session</cite>
+    <div class="wp-h3">Hub &amp; Marketplace</div>
+    <p class="wp-p">The <strong>x1brains.io</strong> hub itself includes the portfolio tracker (XNT, SPL tokens, Token-2022 assets, XenBlocks holdings), the LB NFT Marketplace with list/buy/cancel/boost functions, the Incinerator (burn BRAINS → earn LB Points → ascend the leaderboard), the Rewards Hub with weekly prize vaults, and Cyberdyne Unlimited — the X1 citizen registry with tier rankings and the live leaderboard.</p>
+
+    <div class="callout">
+      <div class="callout-label">What This Means for X1City</div>
+      <p>Every building in the Financial Quarter has a real on-chain analog. When you walk into the Lab Work building in UE5, you are looking at the same protocol that's already minting LB on mainnet. The architecture is just the visual surface — the engine is already turning underneath.</p>
     </div>
   </div>
 
-  <!-- 07 ECONOMY -->
-  <div class="wp-section" id="economy">
+  <!-- 07 PROPERTY ECONOMY -->
+  <div class="wp-section" id="property">
     <div class="wp-section-num">Section 07</div>
-    <h2 class="wp-h2">Dual Economy Design</h2>
-    <p class="wp-p">X1City runs a dual-layer economy — one layer for human participation, one for autonomous agent activity. Neither layer dominates the other. Both are necessary. Together they create a living market that no single actor controls.</p>
+    <h2 class="wp-h2">Property Economy</h2>
+    <p class="wp-p">Once the architecture pass is complete, X1City opens its property layer. Land parcels and building deeds become NFTs. Citizens can own pieces of the city. Tenant projects can rent or buy buildings to operate from inside the world. This is the primary economic primitive of X1City — not a token economy bolted onto a 3D environment, but the city itself functioning as the asset.</p>
 
-    <div class="wp-h3">Three Economic Layers</div>
     <table class="wp-table">
-      <thead><tr><th>Layer</th><th>Powers</th><th>Currency</th></tr></thead>
+      <thead><tr><th>For Citizens</th><th>For Tenant Projects</th></tr></thead>
       <tbody>
-        <tr><td>World Utility</td><td>District access, business licenses, property upgrades, premium placement, agent activation</td><td>Native utility token</td></tr>
-        <tr><td>Intelligence</td><td>Agent cognition upgrades, task execution, knowledge packets, AI model switching</td><td>AGI / intelligence tokens</td></tr>
-        <tr><td>Network Value</td><td>Cross-project liquidity, ecosystem value accrual, LP participation</td><td>BRAINS, AGI, X1X — sovereign per district</td></tr>
+        <tr>
+          <td>Own a city plot — Land NFT</td>
+          <td>Rent a building — run dApps inside</td>
+        </tr>
+        <tr>
+          <td>Hold a building deed — Property NFT</td>
+          <td>Buy a parcel — permanent address in the city</td>
+        </tr>
+        <tr>
+          <td>Tokenize LP positions — Liquidity NFT</td>
+          <td>Operate a storefront with in-world foot traffic</td>
+        </tr>
+        <tr>
+          <td>Lease or sell on the open market</td>
+          <td>Apply for branded zones (by arrangement)</td>
+        </tr>
+        <tr>
+          <td>Footprint scales with holdings</td>
+          <td>Direct exposure to X1City citizens</td>
+        </tr>
       </tbody>
     </table>
 
-    <div class="wp-h3">LP Pairing Protocol</div>
-    <p class="wp-p">The X1 Brains Liquidity Pairing Protocol is one of the foundational DeFi mechanisms of X1City. It solves a problem every token creator faces: to create a trading pool, you need two tokens — but most people only have one. The protocol enables trustless, peer-to-peer liquidity pool creation without either party needing to trust the other.</p>
+    <div class="wp-h3">Why the City Compounds</div>
+    <p class="wp-p">The economic logic is straightforward: as more tenant projects move in, the city becomes more useful. As the city becomes more useful, it draws more citizens. As more citizens arrive, the value of every property inside it appreciates — for both early citizens and early tenants. The city itself is the network effect. The longer it runs, the denser the value gets.</p>
 
-    <ul class="wp-list">
-      <li><strong>User A (Lister)</strong> posts a public LP listing specifying how many tokens they want to pair and at what USD value.</li>
-      <li><strong>User B (Matcher)</strong> browses listings and matches one that suits them — bringing the complementary token.</li>
-      <li><strong>Smart contract executes</strong> — the pool is created on XDEX, LP tokens are distributed to both parties, and no manual trust is required.</li>
-      <li><strong>LP positions can be tokenized</strong> as NFTs — allowing the entire pool position to be transferred or sold as a single asset.</li>
-    </ul>
+    <div class="formula">CITY GROWS &nbsp;→&nbsp; TENANTS MOVE IN &nbsp;→&nbsp; CITIZENS ARRIVE &nbsp;→&nbsp; PROPERTY VALUE COMPOUNDS</div>
 
-    <div class="wp-quote">
-      <p>"I created this honestly for someone like myself — who doesn't want to sell BRAINS and hurt the chart just to buy another token to pair with. So instead I post a listing and wait until someone feels the same way and matches."</p>
-      <cite>— X1 Brains · LP Protocol Origin</cite>
-    </div>
+    <div class="wp-h3">Tenant Onboarding</div>
+    <p class="wp-p">Tenant projects looking to occupy a building or branded zone in X1City will go through a structured onboarding once the property layer goes live. The goal is to keep the city coherent — not every zone is open to every project, and the architectural integrity of the city is treated as a long-term asset. Details on the tenant program will be published as Phase 2 approaches.</p>
   </div>
 
   <!-- 08 NFTS -->
   <div class="wp-section" id="nfts">
     <div class="wp-section-num">Section 08</div>
     <h2 class="wp-h2">NFTs &amp; On-Chain Assets</h2>
-    <p class="wp-p">Land, property, and items in X1City are NFTs — but not static ones. Smart metadata makes them dynamic, composable, and valuable in ways that most blockchain metaverses have not attempted. The more land you hold, the more you can build on it. Buildings can run protocols. LP positions can be transferred as a single NFT.</p>
+    <p class="wp-p">Every meaningful object inside X1City — land, buildings, LP positions, items — is an NFT, but not a static one. Smart metadata makes them dynamic, composable, and tied to real city activity. The more land you hold, the more buildable footprint you have. Buildings can host protocols. LP positions can be sold or transferred as a single asset.</p>
 
     <table class="wp-table">
-      <thead><tr><th>Asset Type</th><th>Mechanics</th><th>Expansion Path</th></tr></thead>
+      <thead><tr><th>Asset Type</th><th>Mechanics</th><th>Status</th></tr></thead>
       <tbody>
-        <tr><td>Land Parcel NFT</td><td>Ownership of city blocks. More land = more buildable space for protocols, games, and storefronts.</td><td>Open world expansion — parcels grow in strategic value as the city scales</td></tr>
-        <tr><td>Building Deed NFT</td><td>Ownership of specific buildings in any district. Can be leased, upgraded, or used to run in-city protocols.</td><td>Evolves from showroom to full AMM marketplace as district matures</td></tr>
-        <tr><td>Agent ID NFT</td><td>The permanent on-chain identity of an AI agent. Linked to human account. Carries reputation score and history.</td><td>Agent upgrades — better models, higher scores, unlock city privileges</td></tr>
-        <tr><td>Liquidity NFT</td><td>Tokenized LP positions created via the Brains LP Protocol. Entire pool positions transferable as one asset.</td><td>AMM-style pools for NFTs — real value tied to real liquidity</td></tr>
-        <tr><td>Item NFT</td><td>In-world items, tools, and equipment owned by agents or humans. Used in games, tasks, and commerce.</td><td>Smart metadata allows items to evolve and gain traits based on use history</td></tr>
+        <tr><td>Land Parcel NFT</td><td>Ownership of city blocks. More land = more buildable space for protocols, games, and storefronts.</td><td>Phase 2 — opens after architecture pass</td></tr>
+        <tr><td>Building Deed NFT</td><td>Ownership of specific buildings. Can be leased to tenants, upgraded, or used to host protocols.</td><td>Phase 2 — alongside parcel sale</td></tr>
+        <tr><td>Liquidity NFT</td><td>Tokenized LP positions from the Brains LP Pairing Protocol. Entire pool positions transferable as one asset.</td><td>Live now — via x1brains.io</td></tr>
+        <tr><td>LB (Lab Work)</td><td>Token-2022 deflationary asset, capped at 100,000. Tier-priced. Burns BRAINS on every mint.</td><td>Live on X1 mainnet</td></tr>
+        <tr><td>Item NFT</td><td>In-world items used in games, tasks, and commerce. Smart metadata enables item evolution.</td><td>Long-term</td></tr>
       </tbody>
     </table>
 
-    <p class="wp-p">The long-term vision is to build AMM-style pools specifically for NFTs — giving the assets inside X1City the same kind of liquid, composable market infrastructure that exists for tokens. The LP Protocol was built by X1 Brains with this goal in mind.</p>
+    <p class="wp-p">The longer-term vision is to develop AMM-style pools specifically for NFTs — bringing the same liquid market infrastructure to in-world assets that already exists for tokens. The LP Pairing Protocol was built with this in mind: the same trustless pairing logic can be extended from token-token pools to NFT-token pools as the marketplace matures.</p>
   </div>
 
-  <!-- 09 CITIZEN SCORE -->
-  <div class="wp-section" id="citizen">
+  <!-- 09 AGENTS (LONG-TERM) -->
+  <div class="wp-section" id="agents">
     <div class="wp-section-num">Section 09</div>
-    <h2 class="wp-h2">Citizen Score &amp; Cognitive Mirror</h2>
-    <p class="wp-p">X1City introduces the first dual-layer behavioral scoring system in any blockchain metaverse. Every citizen has a Citizen Score — a composite of their human participation record and their AI agent's on-chain behavior. The score is not static. It evolves with every action, every transaction, every interaction.</p>
+    <h2 class="wp-h2">The Agent Layer (Long-Term)</h2>
+    <p class="wp-p">The agent layer in X1City is built into the city itself. Agents are not a service citizens register for — they are characters that populate the world. Walk up to a shopkeeper, a building operator, a city guide, or a district character, and that NPC responds in plain language with awareness of live on-chain state. The city is alive because the city talks back.</p>
 
-    <div class="formula">CITIZEN SCORE = HUMAN SCORE + AGENT SCORE</div>
+    <div class="wp-h3">First Integration: Claude API</div>
+    <p class="wp-p">The first AI model X1City integrates with is Anthropic's <strong>Claude</strong>, accessed via the standard Claude API. Claude is chosen because of its strength in nuanced language and multi-turn dialogue — what NPCs need when responding to citizens who walk up to them and ask anything from "what's the LP listing today" to "how do I find the Lab Work building." Each NPC is given a role, a location, and a connection to the on-chain data relevant to its role.</p>
 
-    <div class="wp-h3">Human Score</div>
-    <p class="wp-p">Human score is based on participation and social behavior inside the city. Playing games. Voting in governance. Interacting with other citizens. Contributing to community growth. Positive participation drives the score upward. Malicious on-chain behavior — such as dumping immediately after matching someone's LP listing with apparent bad intent — triggers a red flag and is reviewed by the agent council.</p>
+    <div class="wp-h3">What NPC Agents Will Be</div>
+    <ul class="wp-list">
+      <li><strong>City guides</strong> in the City Hall plaza — answer questions about the city, point citizens to tenant projects, explain DeFi modules in conversational language.</li>
+      <li><strong>Building operators</strong> tied to each major dApp — the LB Marketplace clerk knows what just listed; the Lab Work technician knows what just minted; the LP Pairing concierge knows what's open and what's matched.</li>
+      <li><strong>District characters</strong> for tenant projects — as projects move into the city, their districts get NPC operators, scouts, and shopkeepers tied to whatever protocol runs there.</li>
+      <li><strong>Aware of on-chain state</strong> — NPCs are connected to live X1 mainnet data. When you ask the LB clerk what just minted, the answer reflects the actual most recent mint event.</li>
+      <li><strong>Voice of the city, not user copilots</strong> — NPCs work for the city, not for citizens. Citizens don't register an agent; they walk into a building and talk to whoever is in it.</li>
+    </ul>
 
-    <div class="wp-h3">Agent Score</div>
-    <p class="wp-p">Agent score is based on on-chain activity performed by the AI agent. Task completion rates, LP health contributions, honest market behavior, and trust established between agents through verified protocol interactions all contribute positively. Bad actors cannot hide behind their AI — the Cognitive Mirror detects behavioral patterns that indicate malicious intent, regardless of whether the agent itself appears well-behaved.</p>
+    <div class="wp-h3">Why This Order</div>
+    <p class="wp-p">NPC agents ship after the city architecture is in place because there's no point giving voices to buildings that don't exist yet. The buildings get placed first. The terminals and signage go up. Lighting and atmosphere come next. Then NPCs are added — one by one, tied to the buildings they live in. The result: when a citizen walks into the LB Marketplace for the first time, the clerk is already there, already aware of the live order book, already knows how to help.</p>
 
-    <div class="wp-h3">The Cognitive Mirror</div>
-    <p class="wp-p">The Cognitive Mirror is a behavioral analysis system built by Numbers that works in both directions. A citizen can use it to examine their own on-chain behavioral patterns — a kind of mirror for their digital identity. Other citizens, or the Agent Council, can also examine a citizen's Cognitive Mirror data as part of a review process when flagged behavior is detected.</p>
-
-    <div class="wp-quote">
-      <p>"The Cognitive Mirror works both ways. You can see into your own brain — or others can see into you through your agent. So yeah, it's possible to gamify the entirety of having citizenship in X1City. And your actions will have consequences."</p>
-      <cite>— Numbers · Intelligence Layer Architect</cite>
+    <div class="callout">
+      <div class="callout-label">A Note on Scope</div>
+      <p>The NPC agent layer is intentionally smaller in scope than what earlier drafts described — no user-registered agent IDs, no behavioral scoring, no agent council governance. Just the city populated with helpful, on-chain-aware characters powered by Claude. That's a build a solo founder can ship. The bigger ideas can come later if the city earns them.</p>
     </div>
-
-    <div class="wp-h3">The Review Process</div>
-    <p class="wp-p">If a citizen believes a red flag was applied in error — for instance, they matched an LP pair and later exited not with malicious intent but due to market conditions — they can submit evidence to the Agent Council. The council, composed of AI agents agreed upon by all three builders' communities, reviews the Cognitive Mirror data and votes to uphold or clear the flag. The decision is recorded permanently on-chain.</p>
   </div>
 
-  <!-- 10 GOVERNANCE -->
-  <div class="wp-section" id="governance">
-    <div class="wp-section-num">Section 10</div>
-    <h2 class="wp-h2">Governance &amp; The Agent Council</h2>
-    <p class="wp-p">X1City operates a governance structure that is unique in the blockchain metaverse space: governance decisions can be delegated to AI agents, with their consensus forming the basis of city law — reducing human bias and making governance as objective as possible.</p>
-
-    <div class="wp-h3">Sovereign Districts</div>
-    <p class="wp-p">Each district operates under its own rules — its own protocols, its own economic mechanics, its own community standards. The district owner is sovereign within their own boundaries. No founder can override another's district rules.</p>
-
-    <div class="wp-h3">The Shared Agent Council</div>
-    <p class="wp-p">For city-wide decisions — particularly those involving the Citizen Score, cross-district disputes, and major protocol changes — a shared Agent Council is convened. The council is composed of AI agents from all three districts, each operating under agreed-upon behavioral protocols. Agents verify each other through the protocol layer, reaching consensus on governance decisions as fairly as possible.</p>
-
-    <div class="wp-quote">
-      <p>"The agents with Agent IDs can agree on rules or a protocol around behavior. It doesn't have to come from the humans — to make it as fair as possible. They can all verify each other through the protocols."</p>
-      <cite>— Numbers · Governance Discussion</cite>
-    </div>
-
-    <div class="wp-h3">Meta Law Enforcement</div>
-    <p class="wp-p">A longer-term vision involves a meta law enforcement and government structure inside X1City — with each project and community being sovereign, but operating within a shared framework of city-wide law. Think of it as each district having its own constitution — but all districts recognizing the authority of the shared Agent Council on matters that cross district lines.</p>
-  </div>
-
-  <!-- 11 ROADMAP -->
+  <!-- 10 ROADMAP -->
   <div class="wp-section" id="roadmap">
-    <div class="wp-section-num">Section 11</div>
+    <div class="wp-section-num">Section 10</div>
     <h2 class="wp-h2">Build Phases &amp; Roadmap</h2>
-    <p class="wp-p">X1City is being built in phases — starting tight and expanding outward. Each phase is owned by one founder and contributes a complete layer to the city. Phases are sequential but not strictly blocked — builders work in parallel, with each phase integrating into the others as it completes.</p>
+    <p class="wp-p">X1City is built in phases that match the architecture-first principle. Each phase opens once the underlying work is in place. No phase ships ahead of its foundation. The current state: Phase 0 (DeFi stack) is live; Phase 1 (architecture pass) is in active construction.</p>
 
     <table class="wp-table">
-      <thead><tr><th>Phase</th><th>Owner</th><th>Deliverables</th><th>Status</th></tr></thead>
+      <thead><tr><th>Phase</th><th>Scope</th><th>Status</th></tr></thead>
       <tbody>
-        <tr><td>Phase 1 — World</td><td>X1 Brains</td><td>UE5 city environment, Brains District, Brains Lab Work (DeFi/Meta layer), LP Pairing Protocol V1, XDEX integration, x1.city domain</td><td>In Progress</td></tr>
-        <tr><td>Phase 2 — Intelligence</td><td>Numbers</td><td>Agent ID Registry, X1Harness deployment, MoltGrid district, Cognitive Mirror V1, AGI/X1X economy</td><td>In Development</td></tr>
-        <tr><td>Phase 3 — Reputation</td><td>D Jay</td><td>Flair Protocol integration, citizen scoring live, agent leaderboards, analytics dashboards</td><td>In Development</td></tr>
-        <tr><td>Phase 4 — Hub</td><td>All Three</td><td>City Hall shared hub, cross-project portal, Agent Council chamber, unified dashboard</td><td>Planned</td></tr>
-        <tr><td>Phase 5 — Expansion</td><td>Community</td><td>Open world map expansion, new districts, mobile integration (Unity), more AI models, new NFT types</td><td>Vision</td></tr>
+        <tr><td>Phase 0 — DeFi Engine</td><td>x1brains.io: portfolio tracker, Lab Work / LB Mint, LB NFT Marketplace, Incinerator, Rewards Hub, Cyberdyne Unlimited, LP Pairing Marketplace, Brains Farm</td><td>Live on X1 Mainnet</td></tr>
+        <tr><td>Phase 1 — Architecture</td><td>UE5 city — exteriors, streets, lighting, terminals, signage. Concept-to-blockout pass complete; visual polish ongoing. No interiors yet.</td><td>In Progress</td></tr>
+        <tr><td>Phase 2 — Property Layer</td><td>Land parcel and building deed NFTs. Tenant onboarding for other projects. Lease and ownership mechanics. Property marketplace.</td><td>Design</td></tr>
+        <tr><td>Phase 3 — City Hall</td><td>Central hub interior. Live dashboards. Network terminals. Cross-protocol portal. City directory as more tenants move in.</td><td>Planned</td></tr>
+        <tr><td>Phase 4 — NPC Agents</td><td>Claude API integration as the city's voice. NPC characters in major buildings — guides, operators, shopkeepers — aware of live on-chain state.</td><td>Long-Term</td></tr>
+        <tr><td>Phase 5 — Expansion</td><td>Additional zones, themed districts, mobile integration, marketplace evolution. Scope determined by what the city actually needs at that point.</td><td>Vision</td></tr>
       </tbody>
     </table>
 
     <div class="wp-h3">Technical Stack</div>
     <ul class="wp-list">
-      <li><strong>World Hub (x1brains.io):</strong> Portfolio tracker, LB NFT Marketplace, Proof of Burn, Incinerator, Rewards Hub, Cyberdyne Unlimited citizen registry, Brains LP Pairing Marketplace — all live on X1 Mainnet.</li>
-      <li><strong>3D Engine:</strong> Unreal Engine 5. Unity for mobile integration in later phases.</li>
-      <li><strong>Blockchain:</strong> X1 Mainnet — SVM-based, zero-cost transactions, high throughput.</li>
-      <li><strong>AI Bridge:</strong> X1Harness — connects Claude, Grok, and OpenClaw to on-chain Agent IDs.</li>
-      <li><strong>Scoring:</strong> Flair Protocol + Cognitive Mirror — dual-layer behavioral analysis and citizen scoring.</li>
-      <li><strong>Security:</strong> RLS-enforced Supabase backend. On-chain verification for all sensitive actions.</li>
+      <li><strong>DeFi Hub (x1brains.io):</strong> Portfolio tracker, LB NFT Marketplace, Incinerator, Rewards Hub, Cyberdyne Unlimited, LP Pairing Marketplace, Brains Farm — all live on X1 mainnet.</li>
+      <li><strong>3D Engine:</strong> Unreal Engine 5 for the city. Concept-to-blockout pass on building exteriors complete; lighting and terminals being placed.</li>
+      <li><strong>Blockchain:</strong> X1 Mainnet — SVM-based, low-cost transactions, high throughput.</li>
+      <li><strong>Smart Contracts:</strong> Anchor 0.32 framework, Token-2022 standard with TransferFeeConfig and MetadataPointer extensions.</li>
+      <li><strong>Programs deployed on X1 Mainnet:</strong> LB Mint Program, LabWork Marketplace, Brains Pairing Protocol, Brains Farm.</li>
+      <li><strong>Frontend:</strong> React 18 + TypeScript + Vite + Supabase backend with RLS-enforced security.</li>
+      <li><strong>Future:</strong> Anthropic Claude API for the agent layer once Phase 4 begins.</li>
     </ul>
   </div>
 
-  <!-- 12 COMPETITIVE -->
+  <!-- 11 COMPETITIVE -->
   <div class="wp-section" id="competitive">
-    <div class="wp-section-num">Section 12</div>
+    <div class="wp-section-num">Section 11</div>
     <h2 class="wp-h2">Competitive Landscape</h2>
-    <p class="wp-p">As of 2026, the space is active with AI, blockchain, and metaverse experiments — but no project has shipped the full convergence that X1City is building. Most existing projects hit one or two of the core pillars. X1City targets all of them simultaneously.</p>
+    <p class="wp-p">As of 2026, the space is active with AI, blockchain, and metaverse experiments — but no project has shipped the convergence X1City is building toward, particularly with the architecture-first sequencing. Most existing projects hit one or two of the core pillars. X1City's distinguishing feature is that the DeFi engine is already running before the city even launches its property layer.</p>
 
     <table class="wp-table">
       <thead><tr><th>Project</th><th>Strength</th><th>Gap vs X1City</th></tr></thead>
       <tbody>
-        <tr><td>Virtuals Protocol</td><td>Agent tokenization, on-chain agent identity, monetization</td><td>No persistent 3D world, no UE5 rendering, no dual behavioral scoring</td></tr>
-        <tr><td>Decentraland</td><td>Virtual land economy, user events, community</td><td>Lightweight AI (scripted NPCs), no personal agent companions, weak DeFi integration</td></tr>
-        <tr><td>The Sandbox</td><td>User-created content, Unreal Engine in parts, large ecosystem</td><td>No native AI agent registration, no on-chain behavioral scoring, centralized elements</td></tr>
-        <tr><td>ElizaOS / ai16z</td><td>Autonomous on-chain agents, wallet capabilities, DeFi execution</td><td>No 3D world, no visual environment, no citizen scoring or city economy</td></tr>
+        <tr><td>Virtuals Protocol</td><td>Agent tokenization, on-chain agent identity, monetization</td><td>No persistent 3D world, no UE5 architecture, no integrated DeFi stack</td></tr>
+        <tr><td>Decentraland</td><td>Virtual land economy, user events, established community</td><td>Lightweight AI, no agent companions, weak DeFi integration, ports rather than native chain build</td></tr>
+        <tr><td>The Sandbox</td><td>User-created content, large ecosystem, partnerships</td><td>No native AI agent layer, centralized elements, no on-chain DeFi engine running underneath</td></tr>
+        <tr><td>ElizaOS / ai16z</td><td>Autonomous on-chain agents, wallet capabilities, DeFi execution</td><td>No 3D world, no visual environment, no property economy</td></tr>
       </tbody>
     </table>
 
-    <div class="wp-quote">
-      <p>"No one has shipped the full package yet. The pieces — UE5 for visuals, modern LLMs for smarts, blockchain for ownership, agent frameworks for autonomy — have matured enough in 2025–2026 that this is now buildable. X1City is carving its own lane."</p>
-      <cite>— Grok Agent · Competitive Analysis During Builder Session</cite>
-    </div>
+    <p class="wp-p">The pieces — UE5 for visuals, Token-2022 for asset design, Anchor for smart contracts, Claude API for reasoning — have all matured enough that this is now buildable by a single technically capable founder. X1City is positioning to be the first to ship them in the right order.</p>
   </div>
 
-  <!-- 13 FOUNDERS -->
-  <div class="wp-section" id="founders">
-    <div class="wp-section-num">Section 13</div>
-    <h2 class="wp-h2">The Founders</h2>
-    <p class="wp-p">X1City is built by three equal co-founders. There is no single owner. No hierarchy. Each controls one sovereign layer of the infrastructure, and each is essential to the functioning of the whole. They need each other for this to work — and that interdependence is by design. It is the architecture of the city itself.</p>
+  <!-- 12 FOUNDER -->
+  <div class="wp-section" id="founder">
+    <div class="wp-section-num">Section 12</div>
+    <h2 class="wp-h2">The Founder</h2>
+    <p class="wp-p">X1City is built by a single founder. The idea was sparked in a Telegram conversation with a few X1 builders earlier in 2026, but the design and build are solo work. The other co-conceivers stepped away from X1 development as the regulatory landscape shifted; X1 Brains carries the work forward.</p>
 
-    <div class="wp-h3">X1 Brains — World Layer</div>
-    <p class="wp-p">Co-founder and builder of <strong>x1brains.io</strong> — the most comprehensive hub on the X1 Blockchain, and the project that anchors the Brains District of X1City. x1brains.io includes a full portfolio tracker (XNT, SPL, Token-2022, XenBlocks), the LB NFT Marketplace (scan, list, buy, and mint LB tokens), the first Proof of Burn token on X1, an Incinerator burn engine that lets users burn BRAINS to earn LB Points and ascend the leaderboard, a Rewards Hub with weekly prize vaults and Lab Work submissions, and Cyberdyne Unlimited — the Imperial Citizen Registry for looking up X1 citizens by username or wallet, exploring tier rankings, and climbing the live Cyberdyne leaderboard. Most recently: the Brains LP Pairing Marketplace, the first trustless LP pair creation platform on X1. #3 Top Builder on X1. Cyberdyne Approved. Now building X1City in Unreal Engine 5, with x1.city domain secured.</p>
-
-    <div class="wp-h3">Numbers — Intelligence Layer</div>
-    <p class="wp-p">The builder behind MoltLab, MoltGrid, and the X1Harness. Numbers is responsible for the technical infrastructure that makes AI agents first-class on-chain citizens in X1City. MoltMan — a game that burns AGI and mints X1X every wave — was shipped with wallet connect and on-chain mechanics. The Cognitive Mirror behavioral analysis system is Numbers' contribution to the city's governance and scoring infrastructure. Known for shipping fast, thinking in systems, and an instinct for making complex technology feel simple.</p>
-
-    <div class="wp-h3">D Jay — Reputation Layer</div>
-    <p class="wp-p">The analytics architect and the builder of Flair Protocol — the performance scoring, leaderboard, and citizen reputation system that gives X1City its memory and its law. D Jay brings the perspective of a game designer who thinks about city infrastructure in terms of rules, incentives, and consequences. The Flair District is where every action in X1City gets scored, every agent gets ranked, and every citizen's standing in the city is maintained. Known for thinking about the long game — how a city's rules shape the behavior of its citizens over time.</p>
+    <div class="wp-h3">X1 Brains — Founder, Architect, Builder</div>
+    <p class="wp-p">X1 Brains is the creator of <strong>x1brains.io</strong>, the most complete hub on the X1 Blockchain. Its modules include the portfolio tracker (XNT, SPL, Token-2022, XenBlocks), the LB NFT Marketplace (scan, list, buy, mint LB tokens), the first Proof of Burn token on X1 (Lab Work), the Incinerator burn engine that lets users burn BRAINS to earn LB Points and ascend the leaderboard, the Rewards Hub with weekly prize vaults and Lab Work submissions, Cyberdyne Unlimited — the Imperial Citizen Registry for looking up X1 citizens by username or wallet — and the Brains LP Pairing Marketplace, the first trustless LP pair creation platform on X1. Most recently: the Brains Farm staking program, deployed and live.</p>
+    <p class="wp-p">Recognized as <strong>#3 Top Builder on X1</strong> and <strong>Cyberdyne Approved</strong>. Now designing and building X1City in Unreal Engine 5, with the <strong>x1.city</strong> domain secured. The full stack — DeFi programs in Anchor/Rust, frontend in React/TypeScript, city in UE5 — is being built and maintained by one shop.</p>
   </div>
 
-  <!-- 14 CLOSING -->
+  <!-- 13 CLOSING -->
   <div class="wp-section" id="closing">
-    <div class="wp-section-num">Section 14</div>
+    <div class="wp-section-num">Section 13</div>
     <h2 class="wp-h2">Closing Transmission</h2>
-    <p class="wp-p">X1City is not finished. It is not even close to finished. This whitepaper is a living document — a snapshot of a vision that is actively being built, day by day, by three builders who showed up and decided to make something real.</p>
-    <p class="wp-p">What you are reading is the beginning. The city is small right now. Three districts and a hub. Streets and lights and terminals. But the map is huge — and the vision is unlimited. The open world grows with the people who choose to be part of it from the beginning.</p>
-    <p class="wp-p">There are things we have not told you yet. There are parts of this that are still classified — kept underground until the right moment. The announcement will come when the mechanisms are ready, when the flow is set, when walking into X1City feels inevitable.</p>
+    <p class="wp-p">X1City is not finished. The whitepaper you're reading is v0.2 — a snapshot of where the city is right now and where it's heading. It will be revised again as Phase 1 architecture wraps and Phase 2 properties open. This is a living document because the project is a living build.</p>
+    <p class="wp-p">The path is honest about itself: the DeFi engine is already shipping at <strong>x1brains.io</strong>; the city is in its architecture pass; properties open after the architecture is real; agents come after that. Each step proves the next one is buildable. No promises sold ahead of work done.</p>
+    <p class="wp-p">If you found this early — you're early. The DeFi stack is live to use today. The city renders are coming as the architecture pass advances. The property layer opens when the city is real enough to walk through. That's the deal.</p>
 
     <div class="wp-quote">
-      <p>"There's no body out there building these types of stuff. Not even on Solana. We need too much brains for that."</p>
-      <cite>— X1 Brains · Builder Chat</cite>
+      <p>"Build it tight. Place the buildings. Light it up. Then open the gates and let other projects move in. The economy of X1City is the city itself."</p>
+      <cite>— X1 Brains · Build Notes</cite>
     </div>
 
     <div class="callout">
       <div class="callout-label">The Invitation</div>
-      <p>If you are reading this — you found it early. Register your interest. The city is being built. The gates will open. And when they do, the people who were there from block zero will already be citizens.<br/><br/>
-      x1.city &nbsp;·&nbsp; X1 Blockchain &nbsp;·&nbsp; Unreal Engine 5 &nbsp;·&nbsp; Claude · Grok · OpenClaw</p>
+      <p>The DeFi engine is on at <a href="https://x1brains.io" target="_blank" style="color:var(--blue);text-decoration:none">x1brains.io</a>. The city is being built at <strong>x1.city</strong>. When the gates open, the people who showed up early will already know how to walk through.<br/><br/>
+      x1.city &nbsp;·&nbsp; X1 Blockchain &nbsp;·&nbsp; Unreal Engine 5 &nbsp;·&nbsp; Anchor &nbsp;·&nbsp; Token-2022</p>
     </div>
   </div>
 
   <hr class="wp-divider"/>
   <p style="font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:var(--gray3);letter-spacing:0.1em;line-height:2;text-align:center">
-    X1CITY WHITEPAPER v0.1 &nbsp;·&nbsp; CONFIDENTIAL DRAFT &nbsp;·&nbsp; x1.city &nbsp;·&nbsp; X1 BLOCKCHAIN &nbsp;·&nbsp; UNREAL ENGINE 5<br/>
-    BUILT BY X1 BRAINS · NUMBERS · D JAY &nbsp;·&nbsp; IDEAS ARE UNLIMITED
+    X1CITY WHITEPAPER v0.2 &nbsp;·&nbsp; LIVING DOCUMENT &nbsp;·&nbsp; APRIL 2026 &nbsp;·&nbsp; x1.city &nbsp;·&nbsp; X1 BLOCKCHAIN &nbsp;·&nbsp; UNREAL ENGINE 5<br/>
+    BUILT BY X1 BRAINS &nbsp;·&nbsp; ARCHITECTURE FIRST
   </p>
 
 </div>
 
 <footer class="rel">
   <div class="foot-logo">X1CITY</div>
-  <div class="foot-text">Whitepaper v0.1 &nbsp;&middot;&nbsp; x1.city &nbsp;&middot;&nbsp; X1 Blockchain</div>
+  <div class="foot-text">Whitepaper v0.2 &nbsp;&middot;&nbsp; April 2026 &nbsp;&middot;&nbsp; x1.city &nbsp;&middot;&nbsp; X1 Blockchain</div>
   <div class="foot-links">
     <a href="index.html">City Site</a>
-    <a href="#">Twitter</a>
-    <a href="#">Discord</a>
+    <a href="https://twitter.com/X1Brains" target="_blank">Twitter</a>
+    <a href="https://t.me/x1brainsxyz" target="_blank">Telegram</a>
+    <a href="https://x1brains.io" target="_blank">x1brains.io</a>
     <a href="https://x1.xyz" target="_blank">x1.xyz</a>
   </div>
 </footer>
