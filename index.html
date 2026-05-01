@@ -377,37 +377,8 @@ footer{padding:2rem 2rem;border-top:1px solid var(--border);display:flex;justify
     <div class="city-canvas" style="height:auto;min-height:380px">
       <div class="scan-line"></div>
       <div style="position:relative;width:100%;z-index:1" id="cityVideoWrap">
-        <video id="cityVideo" autoplay muted loop playsinline style="width:100%;display:block;object-fit:cover">
-          <source src="x1citypre.mp4" type="video/mp4">
-        </video>
-        <div id="cityControls" style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(4,6,13,0.92));padding:0.6rem 1rem;display:flex;align-items:center;gap:0.8rem;z-index:10;font-family:'Share Tech Mono',monospace">
-          <button id="cityPlayBtn" onclick="toggleCityPlay()" style="background:none;border:1px solid rgba(26,111,255,0.5);color:#6DB8FF;font-size:0.7rem;padding:0.25rem 0.6rem;cursor:pointer;letter-spacing:0.1em;font-family:'Share Tech Mono',monospace;flex-shrink:0">&#9646;&#9646;</button>
-          <div style="flex:1;height:2px;background:rgba(26,111,255,0.2);cursor:pointer;position:relative" id="cityProgress" onclick="seekCityVideo(event)">
-            <div id="cityProgressFill" style="height:100%;background:#1A6FFF;width:0%;transition:width 0.1s linear;pointer-events:none"></div>
-          </div>
-          <button id="cityMuteBtn" onclick="toggleCityMute()" style="background:none;border:1px solid rgba(26,111,255,0.5);color:#6DB8FF;font-size:0.62rem;padding:0.25rem 0.6rem;cursor:pointer;letter-spacing:0.08em;font-family:'Share Tech Mono',monospace;flex-shrink:0">VOL OFF</button>
-          <input id="cityVol" type="range" min="0" max="1" step="0.05" value="0" oninput="setCityVolume(this.value)" style="width:60px;accent-color:#1A6FFF;cursor:pointer">
-          <button onclick="cityfullscreen()" style="background:none;border:1px solid rgba(26,111,255,0.5);color:#6DB8FF;font-size:0.62rem;padding:0.25rem 0.6rem;cursor:pointer;letter-spacing:0.08em;font-family:'Share Tech Mono',monospace;flex-shrink:0">&#x26F6;</button>
-        </div>
+        <iframe src="https://drive.google.com/file/d/1TpjpC1EFXdPjNHW8_qFyACeyX7n_FIW-/preview" width="100%" height="480" allow="autoplay" style="display:block;border:none;background:#04060D" allowfullscreen></iframe>
       </div>
-      <script>
-        var _cv=document.getElementById('cityVideo');
-        var _cp=document.getElementById('cityProgressFill');
-        var _cpb=document.getElementById('cityPlayBtn');
-        var _cmb=document.getElementById('cityMuteBtn');
-        if(_cv){
-          _cv.addEventListener('timeupdate',function(){
-            if(_cv.duration){_cp.style.width=(_cv.currentTime/_cv.duration*100)+'%';}
-          });
-          _cv.addEventListener('play',function(){_cpb.innerHTML='&#9646;&#9646;';});
-          _cv.addEventListener('pause',function(){_cpb.innerHTML='&#9654;';});
-        }
-        function toggleCityPlay(){if(!_cv)return;_cv.paused?_cv.play():_cv.pause();}
-        function toggleCityMute(){if(!_cv)return;_cv.muted=!_cv.muted;document.getElementById('cityVol').value=_cv.muted?0:_cv.volume;_cmb.textContent=_cv.muted?'VOL OFF':'VOL ON';}
-        function setCityVolume(v){if(!_cv)return;_cv.volume=v;_cv.muted=(v==0);_cmb.textContent=(v==0)?'VOL OFF':'VOL ON';}
-        function seekCityVideo(e){if(!_cv||!_cv.duration)return;var r=document.getElementById('cityProgress').getBoundingClientRect();_cv.currentTime=((e.clientX-r.left)/r.width)*_cv.duration;}
-        function cityfullscreen(){var w=document.getElementById('cityVideoWrap');if(!w)return;if(w.requestFullscreen)w.requestFullscreen();else if(w.webkitRequestFullscreen)w.webkitRequestFullscreen();}
-      </script>
       <!-- legacy SVG fallback (hidden) -->
       <div style="display:none">
       <svg class="city-svg" viewBox="0 0 800 380" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
